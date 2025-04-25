@@ -1,0 +1,6 @@
+// Font Awesome v 6.5+ has already migrated to @use
+// The “as *” re‑exports everything so the utilities are still global.
+@use '@fortawesome/fontawesome-free/scss/fontawesome' as *;
+@use '@fortawesome/fontawesome-free/scss/solid'       as *;
+@use '@fortawesome/fontawesome-free/scss/regular'     as *;
+@use '@fortawesome/fontawesome-free/scss/brands'      as *;

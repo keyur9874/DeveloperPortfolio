@@ -1,0 +1,101 @@
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html {
+  color-scheme: light dark;
+  @include mat.theme((
+    color: mat.$violet-palette,
+    typography: Roboto,
+    density: 0
+  ));
+}
+
+// button colors
+$buttonColor: #472D2D;
+$buttonHover: #472D2D;
+$topButtonHover: #000;
+
+// text colors light theme
+$titleColor: #222831;
+$textColor: #222831;
+$subTitle: #3f4754;
+$cardSubtitle: #666666;
+$talkCardSubTitle: #7f8287;
+// text color dark theme
+$textColorDark: #F8EDE3;
+
+// toggle switch colors
+$toggleCheck: #F8EDE3;
+$toggleSwitchSliderBG: #472D2D;
+
+// githubRepo specific colors
+$githubRepoCardLanguageColorBG: #0000ff;
+$githubRepoCardColor: rgb(88, 96, 105);
+$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
+$githubRepoCardRepoNameColor: rgb(36, 41, 46);
+
+// light background colors
+$lightBackground1: #DBD0C0;
+
+// dark background colors
+$darkBackground: #7D6E83;
+
+// light theme box shadows
+$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
+$lightBoxShadow: rgba(0, 0, 0, 0.1);
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
+
+// dark theme box shadows
+$darkBoxShadow: #d9dbdf;
+$darkBoxShadow2: #ffffff;
+
+// linear gradients
+$experienceCardBlurredDivLG: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.2)
+);
+$experienceCardBannerLG: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5)
+);
+
+// borders
+$lightBorder1: rgba(211, 211, 211, 0.397);
+
+// hovers
+$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
+$blogCardHoverSmallColor: rgba(255, 255, 255, 0.8);
+$headerHoverBG: #bb8842;
+$contactDetailHoverTS: #b5b5b5;
+
+// misc backgrounds
+$iconBackground: #333;
+$appHeaderBG: #282c34;
+
+
+* { font-family: 'Lato', sans-serif;}
+*::-webkit-scrollbar { width: 0 !important }
+* { overflow: -moz-scrollbars-none; }
+* { -ms-overflow-style: none; }
+
+body{
+  background-color: $lightBackground1;
+  color: $textColor;
+  margin: 0;
+}
+
+.dark-mode {
+  background-color: $darkBackground!important;
+  color: $textColorDark !important;
+  transition: "0.1s";
+}
+
+html, body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html, body { scroll-snap-type: y proximity; }
+}

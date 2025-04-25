@@ -1,0 +1,14 @@
+<div class="scroll-snap">
+  <app-header-section></app-header-section>
+  <!-- Introduction -->
+  @if(information.introduction.display){
+  <app-introduction id="hello"></app-introduction>
+  }
+
+  <!-- Skill -->
+  @if(information.skillsSection.display){
+  <div class="scroll-snap wow bounceInUp">
+    <app-skills id="about-me"></app-skills>
+  </div>
+  }
+</div>

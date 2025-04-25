@@ -1,0 +1,23 @@
+<div id="skills" class="main" [ngClass]="{ 'dark-mode': isDark }">
+  <div class="skills-main-div">
+    <div class="skills-image-div">
+      <img alt="Girl working" [src]="skillsImage" />
+    </div>
+    <div class="skills-text-div">
+      <h1 class="skills-heading" [ngClass]="{ 'dark-mode': isDark }">
+        {{ skillsSection.title }}
+      </h1>
+      <p
+        class="subTitle skills-text-subtitle"
+        [ngClass]="{ 'dark-mode': isDark }"
+      >
+        {{ skillsSection.subTitle }}
+      </p>
+      @for (skill of skillsSection.skills; track skill) {
+      <p class="subTitle skills-text" [ngClass]="{ 'dark-mode': isDark }">
+        {{ skill }}
+      </p>
+      }
+    </div>
+  </div>
+</div>

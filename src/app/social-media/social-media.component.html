@@ -1,0 +1,39 @@
+@if(socialMediaLinks.display){
+<div class="social-media-div">
+  <!-- Github -->
+  @if(socialMediaLinks.github.trim() != ''){
+  <a
+    class="icon-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    [href]="socialMediaLinks.github"
+  >
+    <i class="fa-brands fa-github"></i>
+  </a>
+  }
+
+  <!-- Gmail -->
+  @if(socialMediaLinks.gmail.trim() != ''){
+  <a
+    class="icon-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    [href]="'mailto:' + socialMediaLinks.gmail"
+  >
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+  }
+
+  <!-- LinkedIn -->
+  @if(socialMediaLinks.linkedin.trim() != ''){
+  <a
+    class="icon-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    [href]="socialMediaLinks.linkedin"
+  >
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  }
+</div>
+}
