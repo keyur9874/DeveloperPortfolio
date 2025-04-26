@@ -1,1 +1,15 @@
-<p>passion-project works!</p>
+@if(passionProjects.display){
+<div class="main" id="opensource">
+  <h1 class="project-title">Open Source Projects</h1>
+  <div class="repo-cards-div-main">
+    @for (project of repo; track project) {
+    <app-project [repo]="project"></app-project>
+    }
+  </div>
+  <app-button
+    text="More Projects"
+    className="project-button"
+    [link]="socialMediaLinks.github"
+  ></app-button>
+</div>
+}

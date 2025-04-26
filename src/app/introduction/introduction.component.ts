@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     ButtonComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
   ],
   templateUrl: './introduction.component.html',
   styleUrl: './introduction.component.scss',

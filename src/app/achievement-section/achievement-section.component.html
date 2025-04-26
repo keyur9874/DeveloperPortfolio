@@ -1,1 +1,29 @@
-<p>achievement-section works!</p>
+@if(achievementSection.display){
+<div class="main" id="achievements">
+  <div class="achievement-main-div">
+    <div class="achievement-header">
+      <h1
+        [ngClass]="{ 'dark-mode': isDarkMode }"
+        class="heading achievement-heading"
+      >
+        {{ achievementSection.title }}
+      </h1>
+      <p
+        [ngClass]="{ 'dark-mode': isDarkMode }"
+        class="subTitle achievement-subtitle"
+      >
+        {{ achievementSection.subtitle }}
+      </p>
+    </div>
+    <div class="achievement-cards-div">
+      @for (achievement of achievementSection.achievementsCards; track
+      achievement) {
+      <app-achievements
+        [isDarkMode]="isDarkMode"
+        [cardInfo]="achievement"
+      ></app-achievements>
+      }
+    </div>
+  </div>
+</div>
+}

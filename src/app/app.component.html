@@ -11,4 +11,35 @@
     <app-skills id="about-me"></app-skills>
   </div>
   }
+
+  <!-- Software skills -->
+  @if(information.skillsSection.display){
+  <div class="scroll-snap">
+    <app-software-skills id="skills"></app-software-skills>
+  </div>
+  }
+
+  <!-- My journey -->
+  @if(information.myJourney.display){
+  <div class="scroll-snap">
+    <app-work-experience id="journey"></app-work-experience>
+  </div>
+  }
+
+  <!-- Projects -->
+  @if(information.openSource.display){
+  <div class="scroll-snap">
+    <app-passion-project id="projects"></app-passion-project>
+  </div>
+  }
+  <div class="scroll-snap">
+    @if(information.achievementSection.display){
+    <app-achievement-section id="achievements"></app-achievement-section>
+    }
+    <div class="footer-div">
+      <p class="footer-text" [ngClass]="{ 'dark-mode': isDarkMode }">
+        Made with ❤️ by Keyur
+      </p>
+    </div>
+  </div>
 </div>

@@ -1,1 +1,14 @@
-<p>work-experience works!</p>
+@if(workExperience.display){
+<div id="experience">
+  <div class="experience-container" id="workExperience">
+    <div>
+      <h1 class="experience-heading">My Journey</h1>
+      <div class="experience-cards-div">
+        @for (experience of workExperience.experience; track experience) {
+          <app-experience-card [item]="experience"></app-experience-card>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+}

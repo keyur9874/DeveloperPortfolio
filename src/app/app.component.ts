@@ -1,20 +1,31 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
 import { HeaderSectionComponent } from './header-section/header-section.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { achievementSection, introduction, myJourney, openSource, skillsSection, socialMediaLinks, splashScreen } from '../information';
 import { ThemeService } from './theme.service';
 import { SkillsComponent } from './skills/skills.component';
+import { SoftwareSkillsComponent } from './software-skills/software-skills.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { PassionProjectComponent } from './passion-project/passion-project.component';
+import { AchievementSectionComponent } from './achievement-section/achievement-section.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   imports: [
+    CommonModule,
     HeaderSectionComponent,
     IntroductionComponent,
-    SkillsComponent
+    SkillsComponent,
+    SoftwareSkillsComponent,
+    WorkExperienceComponent,
+    PassionProjectComponent,
+    AchievementSectionComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  // encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   isDarkMode!: boolean;
