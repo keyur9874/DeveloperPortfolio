@@ -1,3 +1,4 @@
+[![pages-build-deployment](https://github.com/keyur9874/DeveloperPortfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/keyur9874/DeveloperPortfolio/actions/workflows/pages/pages-build-deployment)
 # DeveloperPortfolio
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
