@@ -46,7 +46,7 @@ const skillsSection = {
 
   /* Make Sure to add badge links from https://github.com/alexandresanlim/Badges4-README.md-Profile */
   softwareSkillsHeader: "Technologies I've dipped my toes in...",
-  softwareSkillsImage: '../../assets/images/reading.png',
+  softwareSkillsImage: '../../assets/images/skill.png',
   softwareSkills: [
     {
       skillName: '.Net Core',
@@ -180,41 +180,43 @@ const myJourney = {
       role: 'Computer Engineer',
       short_note: 'Student',
       company: 'Government Enginnering College - Gandhinagar',
-      companyLogo: '../../assets/images/veloxcore.jpeg',
+      companyLogo: '../../assets/images/GECG_logo.png',
       date: 'Aug 2018 – Mar 2022',
       desc: '',
       keyNotes: [
-        'Favorite Subject: Data structures and different Algorithms.',
-        'Anna University - Rank holder - 22.',
-        'Served as the class representative and coordinated various activities for my batch for four years',
-        'Coordinated Astra - 2K19 National symposium conducted by department.',
+        `I have completed my Bachelor of Technology (B.Tech) in Computer Engineering.`,
+        `Graduated from [Your College Name] as part of a 4-year full-time program.`,
+        `Gained strong knowledge in areas like software development, algorithms, databases, computer networks, and AI/ML.`,
+        `Completed various academic projects, internships, and participated in coding competitions during my course.`,
+        `I am passionate about technology, problem-solving, and continuous learning to grow in the tech industry.`
       ],
     },
     {
       role: 'Software Engineer',
-      // short_note: 'Software developer',
+      short_note: 'Software developer',
       company: 'Veloxcore Private Limited',
       companyLogo: '../../assets/images/veloxcore.jpeg',
       date: 'Sep 2021 – Mar 2025',
       desc: '',
       keyNotes: [
-        'Favorite Subject: Data structures and different Algorithms.',
-        'Anna University - Rank holder - 22.',
-        'Served as the class representative and coordinated various activities for my batch for four years',
-        'Coordinated Astra - 2K19 National symposium conducted by department.',
+        `Skilled in .NET Core backend development and Angular frontend frameworks to build full-stack web applications.`,
+        `Experienced in designing and developing REST APIs, microservices, and responsive UI with best coding practices.`,      
+        `Familiar with Microsoft Azure fundamentals, including App Services, Azure SQL, and basic cloud deployment.`,
+        `Passionate about writing clean, scalable, and maintainable code, with a strong focus on learning new technologies and improving software performance.`
       ],
     },
     {
       role: 'Senior Software Enginner',
       company: 'Veloxcore Private Limited',
-      // short_note: 'Senior Software Enginner',
+      short_note: 'Senior Software Enginner',
       companyLogo: '../../assets/images/veloxcore.jpeg',
       date: 'Apr 2025 – Present',
       desc: '',
       keyNotes: [
-        'Explored Scala, Apache Spark 3 and Apache Cassandra.',
-        'Developed a module in an ongoing project which processes large volumes of financial data to compute complex tax calculations.',
-        'Understood complex tax calculation requirements and rewrote an existing module and improved processing performance by 50%.',
+        `Experienced Senior Software Engineer specializing in .NET Core backend development and Angular frontend technologies.`,
+        `Proficient in implementing advanced UI components using AG Grid and Highcharts for dynamic and data-driven applications.`,
+        `Strong hands-on experience with Azure Cloud services, including Azure Kubernetes Service (AKS), Azure App Services, and Azure SQL.`,
+        `Skilled in designing and building applications using Microservices architecture, focusing on scalability, security, and cloud-native best practices.`
       ],
     },
   ],
